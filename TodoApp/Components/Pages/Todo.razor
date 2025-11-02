@@ -14,11 +14,11 @@
 </ul>
 
 <input @bind="newTodo" />
-<button @onclick="AddTodo">Add todo</button>
+<button @onClick="AddTodo">Add todo</button>
 
 @code {
     private List<TodoItem> todos = new();
-    
+
     string newTodo = "";
 
     void AddTodo()
